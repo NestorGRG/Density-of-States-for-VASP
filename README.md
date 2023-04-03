@@ -1,18 +1,18 @@
 # Density-of-States-for-VASP
 Python program to plot the Density of States (DOS) from VASP outputs
 
-# Needed Files
+## Needed Files
 The necessary input files are:
   1.  `vasprun.xml`
 
-# Requirements  
+## Requirements  
 The following Python modules must be installed:
   1. `Pandas`
   2. `lxml`
   3. `Cycler`
   2. `Matplotlib`
 
-# Instructions
+## Instructions
 This program must be runned in the same directory as the input files.
 The use of this program is very simple:
 1.  Make sure that the input files have the aforementioned names.
