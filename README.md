@@ -3,7 +3,7 @@ Python program to plot the Density of States (DOS) from VASP outputs
 
 # Needed Files
 The necessary input files are:
-  1.  vasprun.xml`
+  1.  ´vasprun.xml
 
 # Requirements  
 The following Python modules must be installed:
