@@ -261,7 +261,7 @@ plt.rcParams["axes.prop_cycle"] = custom_cycler
 
 #Plotting
 # Total DOS
-plot = df_total.plot(legend=None)
+plot = df_total.plot(legend="Total DOS")
 plot.axvline(x=0, color="black", linestyle="--")
 
 plt.xlim(-2,2)
@@ -280,11 +280,14 @@ if ispin == 2:
     plot1 = dos_specie_up[1]["p"].plot(ax=plot,label="C (p)")
     plot1 = dos_specie_dn[1]["p"].plot(ax=plot,legend=None)
     plt.ylim(-15,15)
+
 #Legend
 handles, labels = plot.get_legend_handles_labels()
+print(handles)
 if ispin == 1:
+    new_handles = [handles[0],handles[1],handles[2],handles[3]]
     new_labels = ["Total DOS","Ti (d)", "Ti (p)", "C (p)"]
-    legend = plot.legend(loc="center left",bbox_to_anchor=[1.01, 0.5],frameon=False)
+    legend = plot.legend(handles=new_handles,labels=new_labels,loc="center left",bbox_to_anchor=[1.01, 0.5],frameon=False)
 if ispin == 2:
     new_handles = [handles[0],handles[2],handles[4],handles[6]]
     new_labels = ["Total DOS","Ti (d)", "Ti (p)", "C (p)"]
