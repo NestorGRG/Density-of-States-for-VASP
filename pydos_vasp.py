@@ -283,7 +283,6 @@ if ispin == 2:
 
 #Legend
 handles, labels = plot.get_legend_handles_labels()
-print(handles)
 if ispin == 1:
     new_handles = [handles[0],handles[1],handles[2],handles[3]]
     new_labels = ["Total DOS","Ti (d)", "Ti (p)", "C (p)"]
