@@ -1,7 +1,7 @@
 # Density-of-States-for-VASP
 Python program to plot the Density of States (DOS) from VASP outputs
 
-### The projection of the DOS must be calculated, in consequence, the `LORBIT =  11` keyword must be present in the `INCAR` file.
+#### The projection of the DOS must be calculated, in consequence, the `LORBIT =  11` keyword must be present in the `INCAR` file.
 
 ## Needed Files
 The necessary input files are:
