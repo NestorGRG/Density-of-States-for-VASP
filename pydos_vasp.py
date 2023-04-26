@@ -60,7 +60,6 @@ if ispin == 1:
     print("Non-spin polarized")
 if ispin == 2:
     print("Spin polarized")
-print(ispin)
 
 #Obtaining the Fermi Energy
 # Find the efermi tag
