@@ -175,19 +175,19 @@ if ispin == 2:
         dn_pdos_l.append(df_l)
 
 #Saving the l-decomposed PDOS per atom
-for i in range(1,len(up_pdos_l)+1):
-    name_file = 'dos'+str(i)+'_l-decomposed.txt'
-    with open(name_file,"w") as f:
-        for item in up_pdos_l:
-            string = item.to_string(header =True, index=True)
-            f.write(f"{string}\n")
-if ispin == 2:
-    for i in range(1,len(dn_pdos_l)+1):
-        name_file = 'dos'+str(i)+'_l-decomposed_down.txt'
-        with open(name_file, "w") as f:
-            for item in dn_pdos_l:
-                string = item.to_string(header =True, index=True)
-                f.write(f"{string}\n")
+#for i in range(1,len(up_pdos_l)+1):
+#    name_file = 'dos'+str(i)+'_l-decomposed.txt'
+#    with open(name_file,"w") as f:
+#        for item in up_pdos_l:
+#            string = item.to_string(header =True, index=True)
+#            f.write(f"{string}\n")
+#if ispin == 2:
+#    for i in range(1,len(dn_pdos_l)+1):
+#        name_file = 'dos'+str(i)+'_l-decomposed_down.txt'
+#        with open(name_file, "w") as f:
+#            for item in dn_pdos_l:
+#                string = item.to_string(header =True, index=True)
+#                f.write(f"{string}\n")
 
 #Grouping DOS by species
 #Creating a list with DataFrame = 0
@@ -223,20 +223,20 @@ if ispin == 2:
             k = k + 1
 
 #Saving PDOS per species in files of UP and DOWN (in case ispin=2)
-for i in range(len(dos_specie_up)):
-    name_file = 'dos_'+str(species_list[i][0])+'_l-decomposed.txt'
-    with open(name_file, "w") as f:
-        for item in dos_specie_up:
-            string = item.to_string(header =True, index=True)
-            f.write(f"{string}\n")
+#for i in range(len(dos_specie_up)):
+#    name_file = 'dos_'+str(species_list[i][0])+'_l-decomposed.txt'
+#    with open(name_file, "w") as f:
+#        for item in dos_specie_up:
+#            string = item.to_string(header =True, index=True)
+#            f.write(f"{string}\n")
 
-if ispin == 2:
-    for i in range(len(dos_specie_dn)):
-        name_file = 'dos_'+str(species_list[i][0])+'_l-decomposed_down.txt'
-        with open(name_file, "w") as f:
-            for item in dos_specie_dn:
-                string = item.to_string(header =True, index=True)
-                f.write(f"{string}\n")
+#if ispin == 2:
+#    for i in range(len(dos_specie_dn)):
+#        name_file = 'dos_'+str(species_list[i][0])+'_l-decomposed_down.txt'
+#        with open(name_file, "w") as f:
+#            for item in dos_specie_dn:
+#                string = item.to_string(header =True, index=True)
+#                f.write(f"{string}\n")
 
 #Plotting Style
 if ispin == 1:
